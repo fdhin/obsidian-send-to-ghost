@@ -12,7 +12,7 @@ export const DEFAULT_SETTINGS: SettingsProp = {
 
 export interface ContentProp {
 	title: string;
-	tags?: string[];
+	tags?: any[];
 	featured?: boolean;
 	status: string;
 	excerpt?: string | undefined;

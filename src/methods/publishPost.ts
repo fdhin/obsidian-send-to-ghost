@@ -43,7 +43,9 @@ export const publishPost = async (
 
 		const frontmatter = {
 			title: metaMatter?.title || view.file.basename,
-			tags: metaMatter?.tags || [],
+			tags: metaMatter?.tags
+				? metaMatter.tags.map((t: string) => ({ name: t }))
+				: [],
 			featured: metaMatter?.featured || false,
 			status: metaMatter?.published ? "published" : "draft",
 			excerpt: metaMatter?.excerpt || undefined,
