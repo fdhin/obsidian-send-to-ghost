@@ -48,7 +48,7 @@ export const publishPost = async (
 				: [],
 			featured: metaMatter?.featured || false,
 			status: metaMatter?.published ? "published" : "draft",
-			excerpt: metaMatter?.excerpt || undefined,
+			custom_excerpt: metaMatter?.excerpt || undefined,
 			feature_image: metaMatter?.feature_image || undefined,
 		};
 		const ghostId = metaMatter?.ghost_id;

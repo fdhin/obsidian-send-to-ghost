@@ -15,7 +15,7 @@ export interface ContentProp {
 	tags?: any[];
 	featured?: boolean;
 	status: string;
-	excerpt?: string | undefined;
+	custom_excerpt?: string | undefined;
 	feature_image?: string;
 }
 
